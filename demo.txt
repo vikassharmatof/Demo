@@ -1,3 +1,9 @@
 new repo with new branch
-new line to check push without full command
+new line to check push without full command( suppose new change)
 
+<<<<<<< HEAD
+=======
+line to check new branch push
+new line to check difference
+
+>>>>>>> 480d9f5ef550f5ada211eb9c44a4d97937a0b904
