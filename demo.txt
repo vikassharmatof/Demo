@@ -3,5 +3,5 @@ new line to check push without full command(new button)
 new line to check push without full command( suppose new change)
 
 line to check new branch push
-new line to check difference
+new line to check difference(change by newbranch)
 
