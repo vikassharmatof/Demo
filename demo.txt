@@ -9,3 +9,6 @@ new line to check difference(change by newbranch)
 these are some changes to merge into main
 and i want to add these changes and merge into main branch
 
+changes which i want to send into mainand receive into new branch
+
+
