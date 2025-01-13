@@ -1,5 +1,5 @@
 new repo with new branch
-new line to check push without full command
+new line to check push without full command(new button)
 
 line to check new branch push
 new line to check difference
