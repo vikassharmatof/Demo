@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout"
+        android:textSize="30dp"
+        android:id="@+id/tv_rl"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        tools:listitem="@layout/support_simple_spinner_dropdown_item">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Relative layout Page"
+         android:layout_centerInParent="true">
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Switch to Constrain Layout"
+        android:id="@+id/btn_switchtoconstrainlayout">
+    </Button>
+
+</RelativeLayout>
