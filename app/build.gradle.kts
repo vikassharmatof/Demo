@@ -40,4 +40,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    implementation("com.google.code.gson:gson:2.6.2")
+    implementation("com.squareup.retrofit2:retrofit:2.0.2")
+    implementation("com.squareup.retrofit2:converter-gson:2.0.2")
+    implementation ("com.squareup.picasso:picasso:2.8")
+
+    implementation("com.google.dagger:hilt-android:2.51.1")
 }
