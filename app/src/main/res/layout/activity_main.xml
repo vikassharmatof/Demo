@@ -8,69 +8,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:weightSum="3">
+    android:weightSum="10">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="Linear layout"
         android:textSize="30dp"
-        android:gravity="center">
-    </TextView>
+        android:layout_weight="1"
+        android:gravity="center" />
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:orientation="vertical">
-
-        <EditText
-            android:layout_marginTop="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter the username"
-            android:inputType="textPersonName"
-            android:layout_marginHorizontal="10dp">
-        </EditText>
-        <EditText
-            android:layout_marginTop="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter the password"
-            android:inputType="textPassword"
-            android:layout_marginHorizontal="10dp">
-        </EditText>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/ButtonStyle"
-            android:text="Submit"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp">
-        </Button>
+        android:layout_height="0dp"
+        android:id="@+id/rv_students"
+        android:layout_marginTop="10dp"
+        android:layout_weight="7"
+        tools:listitem="@layout/database_item" />
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="This is Linear layout Page"
-            android:gravity="center"
-            style="@style/TextStyle">
-        </TextView>
 
-    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="This is Linear layout Page"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginVertical="36dp"
+        style="@style/TextStyle" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="Switch to Relative layout Page"
         android:layout_gravity="center"
         android:id="@+id/btn_switchtorelativelayout"
         style="@style/ButtonStyle"
-        android:layout_marginBottom="10dp">
-    </Button>
-
+        android:layout_weight="0.7"
+        android:layout_marginBottom="10dp" />
 
 </LinearLayout>
-

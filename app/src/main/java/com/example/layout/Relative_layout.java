@@ -33,6 +33,15 @@ public class Relative_layout extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         fetchPhotos();
+
+
+        findViewById(R.id.btn_switchtoconstrainlayout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Relative_layout.this, ConstraintLayout.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void fetchPhotos() {
