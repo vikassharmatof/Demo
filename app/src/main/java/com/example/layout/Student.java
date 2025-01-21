@@ -11,6 +11,8 @@ public class Student {
     private String name;
     private int rollNumber;
 
+    private String imageUri;
+
     // Getters and Setters
     public int getId() {
         return id;
@@ -35,5 +37,8 @@ public class Student {
     public void setRollNumber(int rollNumber) {
         this.rollNumber = rollNumber;
     }
+
+    public String getImageUri() { return imageUri; }
+    public void setImageUri(String imageUri) { this.imageUri = imageUri; }
 
 }
