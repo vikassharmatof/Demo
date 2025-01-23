@@ -6,6 +6,10 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
+
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,6 +32,25 @@
         </activity>
         <activity android:name=".ConstraintLayout">
         </activity>
+        <activity android:name=".MicrosoftAuth">
+
+        </activity>
+        <activity
+            android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="msauth"
+                    android:host="com.example.layout"
+                    android:path="/2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D" />
+            </intent-filter>
+        </activity>
+
+
+
 
         <activity android:name=".SavePhoto"></activity>
     </application>

@@ -1,5 +1,6 @@
 package com.example.layout;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -17,12 +18,13 @@ public class ConstraintLayout extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
 
-    public Button switchtolinear;
+    public Button switchtolinear, gotoauth;
 
     private EditText etName, etRollNumber, etId;
     private Uri selectedImageUri;
     private StudentDatabase database;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,16 @@ public class ConstraintLayout extends AppCompatActivity {
         etId = findViewById(R.id.et_id);
 
         switchtolinear = findViewById(R.id.btn_switchtolinearlayout);
+
+        gotoauth = findViewById(R.id.btn_gotoauth);
+        Intent gintent = new Intent(ConstraintLayout.this, MicrosoftAuth.class);
+
+        gotoauth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(gintent);
+            }
+        });
 
         database = StudentDatabase.getInstance(this);
 
